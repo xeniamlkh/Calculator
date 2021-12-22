@@ -20,4 +20,5 @@
     <string name="dot">.</string>
     <string name="addition">+</string>
     <string name="sqrt">&#8730;</string>
+    <string name="calculation_field">0</string>
 </resources>
