@@ -8,43 +8,25 @@
 
     <EditText
         android:id="@+id/calculation_field"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:layout_marginTop="100dp"
-        android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        style="@style/EditTextBasic.WithMarginTop"
         android:text="@string/calculation_field"
-        android:textSize="56sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/result_field"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/result_field"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/result_field"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:textAlignment="textEnd"
-        android:textColor="@color/black"
-        android:textSize="56sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        style="@style/EditTextBasic.WithMarginTop.WithMarginBottom"
+        app:layout_constraintBottom_toTopOf="@id/button_clear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calculation_field"
-        app:layout_constraintBottom_toTopOf="@id/button_clear"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculation_field" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_clear"
-        android:layout_width="195dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/DeleteButton.WithMarginEnd"
         android:text="@string/clear"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/red_copper_dk"
         app:layout_constraintBottom_toTopOf="@id/button_7"
         app:layout_constraintEnd_toStartOf="@+id/button_backspace"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -52,14 +34,10 @@
         app:layout_constraintTop_toBottomOf="@id/result_field"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_backspace"
-        android:layout_width="195dp"
-        android:layout_height="75dp"
+        style="@style/DeleteButton"
         android:text="@string/backspace"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/red_copper_dk"
         app:layout_constraintBottom_toTopOf="@id/button_divide"
         app:layout_constraintEnd_toEndOf="@id/button_sqrt"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -67,15 +45,10 @@
         app:layout_constraintTop_toTopOf="@id/button_clear"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_7"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_7"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_4"
         app:layout_constraintEnd_toStartOf="@+id/button_8"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -83,15 +56,10 @@
         app:layout_constraintTop_toBottomOf="@id/button_clear"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_8"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_8"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_5"
         app:layout_constraintEnd_toStartOf="@+id/button_9"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -99,15 +67,10 @@
         app:layout_constraintTop_toTopOf="@id/button_7"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_9"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_9"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_6"
         app:layout_constraintEnd_toStartOf="@id/button_divide"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -115,15 +78,10 @@
         app:layout_constraintTop_toTopOf="@id/button_8"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_divide"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.OperatorButton.WithMarginEnd"
         android:text="@string/division"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/khaki_green"
         app:layout_constraintBottom_toTopOf="@id/button_multiplication"
         app:layout_constraintEnd_toStartOf="@id/button_sqrt"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -131,14 +89,10 @@
         app:layout_constraintTop_toTopOf="@id/button_9"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_sqrt"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        style="@style/ButtonBasic.OperatorButton"
         android:text="@string/sqrt"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/khaki_green"
         app:layout_constraintBottom_toTopOf="@id/button_percentage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -146,15 +100,10 @@
         app:layout_constraintTop_toTopOf="@id/button_divide"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_4"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_4"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_1"
         app:layout_constraintEnd_toStartOf="@+id/button_5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -162,15 +111,10 @@
         app:layout_constraintTop_toBottomOf="@id/button_7"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_5"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_5"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_2"
         app:layout_constraintEnd_toStartOf="@+id/button_6"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -178,15 +122,10 @@
         app:layout_constraintTop_toTopOf="@id/button_4"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_6"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_6"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_3"
         app:layout_constraintEnd_toStartOf="@id/button_multiplication"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -194,15 +133,10 @@
         app:layout_constraintTop_toTopOf="@id/button_5"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_multiplication"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.OperatorButton.WithMarginEnd"
         android:text="@string/multiplication"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/khaki_green"
         app:layout_constraintBottom_toTopOf="@id/button_minus"
         app:layout_constraintEnd_toStartOf="@id/button_percentage"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -210,14 +144,10 @@
         app:layout_constraintTop_toTopOf="@id/button_6"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_percentage"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        style="@style/ButtonBasic.OperatorButton"
         android:text="@string/percentage"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/khaki_green"
         app:layout_constraintBottom_toTopOf="@id/button_equal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -225,15 +155,10 @@
         app:layout_constraintTop_toTopOf="@id/button_multiplication"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_1"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_1"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_0"
         app:layout_constraintEnd_toStartOf="@+id/button_2"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -241,30 +166,20 @@
         app:layout_constraintTop_toBottomOf="@id/button_4"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_2"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_2"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintEnd_toStartOf="@+id/button_3"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toEndOf="@id/button_1"
         app:layout_constraintTop_toTopOf="@id/button_1"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_3"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.NumberButton.WithMarginEnd"
         android:text="@string/_3"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintBottom_toTopOf="@id/button_dot"
         app:layout_constraintEnd_toStartOf="@id/button_minus"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -272,15 +187,10 @@
         app:layout_constraintTop_toTopOf="@id/button_2"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_minus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.OperatorButton.WithMarginEnd"
         android:text="@string/subtraction"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/khaki_green"
         app:layout_constraintBottom_toTopOf="@id/button_plus"
         app:layout_constraintEnd_toStartOf="@id/button_equal"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -288,14 +198,10 @@
         app:layout_constraintTop_toTopOf="@id/button_3"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_equal"
-        android:layout_width="75dp"
-        android:layout_height="0dp"
+        style="@style/ButtonBasic.OperatorButton.ButtonEqual"
         android:text="@string/equals"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/red_copper_dk"
         app:layout_constraintBottom_toBottomOf="@id/button_plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -303,46 +209,30 @@
         app:layout_constraintTop_toBottomOf="@id/button_percentage"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_0"
-        android:layout_width="0dp"
-        android:layout_height="75dp"
+        style="@style/ButtonBasic.NumberButton.ButtonZero"
         android:text="@string/_0"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/golden_brown"
         app:layout_constraintEnd_toEndOf="@id/button_2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/button_1"
         app:layout_constraintTop_toBottomOf="@id/button_2"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_dot"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.OperatorButton.WithMarginEnd.WithMarginStart"
         android:text="@string/dot"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/khaki_green"
         app:layout_constraintEnd_toEndOf="@+id/button_3"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/button_3"
         app:layout_constraintTop_toBottomOf="@id/button_3"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_plus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        style="@style/ButtonBasic.OperatorButton.WithMarginEnd.WithMarginStart"
         android:text="@string/addition"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/khaki_green"
         app:layout_constraintEnd_toEndOf="@id/button_minus"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/button_minus"
