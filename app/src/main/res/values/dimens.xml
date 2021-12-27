@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="editTextLayoutHeight">95dp</dimen>
+    <dimen name="layoutMarginEnd">5dp</dimen>
+    <dimen name="layoutMarginStart">5dp</dimen>
+    <dimen name="layoutMarginTop">5dp</dimen>
+    <dimen name="layoutMarginBottom">5dp</dimen>
+    <dimen name="calcFieldMarginTop">100dp</dimen>
+    <dimen name="basicButtonLayoutWidth">75dp</dimen>
+    <dimen name="basicButtonLayoutHeight">75dp</dimen>
+    <dimen name="basicButtonTextSize">30sp</dimen>
+    <dimen name="zeroWidth">0dp</dimen>
+    <dimen name="zeroHeight">0dp</dimen>
+    <dimen name="deleteButtonWidth">195dp</dimen>
+    <dimen name="deleteButtonHeight">75dp</dimen>
+    <dimen name="deleteButtonTextSize">20sp</dimen>
+    <dimen name="editTextSize">56sp</dimen>
+    <dimen name="landBasicButtonLayoutWidth">130dp</dimen>
+    <dimen name="landBasicButtonLayoutHeight">40dp</dimen>
+    <dimen name="landBasicButtonTextSize">15sp</dimen>
+    <dimen name="landDeleteButtonWidth">350dp</dimen>
+    <dimen name="landDeleteButtonHeight">40dp</dimen>
+    <dimen name="landDeleteButtonTextSize">15sp</dimen>
+</resources>
