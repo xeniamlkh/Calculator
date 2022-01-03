@@ -7,9 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="copper">#CE675B</color>
     <color name="dark_green">#374912</color>
     <color name="golden_brown">#FFA449</color>
     <color name="red_copper_dk">#A8444C</color>
     <color name="khaki_green">#AA8667</color>
+
+    <color name="copper_night">#A73E32</color>
+    <color name="dark_green_night">#29360E</color>
+    <color name="golden_brown_night">#EC7600</color>
+    <color name="red_copper_dk_night">#7A3237</color>
+    <color name="khaki_green_night">#84664A</color>
 </resources>

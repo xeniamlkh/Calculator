@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 import java.text.DecimalFormat;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class NightActivity extends AppCompatActivity implements View.OnClickListener {
 
     private String curr;
     private String resultVariable;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_night);
 
         calculationField = (EditText) findViewById(R.id.calculation_field);
         resultField = (EditText) findViewById(R.id.result_field);
@@ -468,7 +468,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(this, NightActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

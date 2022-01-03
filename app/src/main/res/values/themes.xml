@@ -16,7 +16,7 @@
     </style>
 
     <!-- Buttons -->
-    <style name="ButtonBasic">
+    <style name="ButtonBasic" parent="Theme.Calculator">
         <item name="android:layout_width">@dimen/basicButtonLayoutWidth</item>
         <item name="android:layout_height">@dimen/basicButtonLayoutHeight</item>
         <item name="android:textSize">@dimen/basicButtonTextSize</item>
@@ -82,6 +82,12 @@
         <item name="android:layout_marginBottom">@dimen/layoutMarginBottom</item>
     </style>
 
+    <style name="ButtonBasic.OperatorButton.SwitchButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/switchButton</item>
+        <item name="android:textSize">@dimen/switchButtonText</item>
+    </style>
+
     <!-- Landscape buttons -->
     <style name="LandButtonBasic">
         <item name="android:layout_width">@dimen/landBasicButtonLayoutWidth</item>
@@ -130,4 +136,168 @@
     <style name="LandDeleteButton.WithMarginEnd">
         <item name="android:layout_marginEnd">@dimen/layoutMarginEnd</item>
     </style>
+
+    <style name="LandEditTextBasic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/landEditTextLayoutHeight</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/landEditTextSizeCalculation</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LandEditTextBasic.ResultTextView">
+        <item name="android:textSize">@dimen/landEditTextSizeResult</item>
+    </style>
+
+    <style name="LandButtonBasic.OperatorButton.SwitchButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/landSwitchButton</item>
+        <item name="android:textSize">@dimen/switchButtonText</item>
+    </style>
+
+    <!-- NIGHT THEME -->
+    <!-- Base application theme. -->
+    <style name="Theme.CalculatorNight" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red_copper_dk_night</item>
+        <item name="colorPrimaryVariant">@color/copper_night</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/khaki_green_night</item>
+        <item name="colorSecondaryVariant">@color/dark_green_night</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/calc_back_night</item>
+    </style>
+
+    <!-- Night Buttons -->
+    <style name="ButtonBasic.NumberButtonNight">
+        <item name="backgroundTint">@color/golden_brown_night</item>
+    </style>
+
+    <style name="ButtonBasic.NumberButtonNight.WithMarginEnd">
+        <item name="android:layout_marginEnd">@dimen/layoutMarginEnd</item>
+    </style>
+
+    <style name="ButtonBasic.NumberButtonNight.ButtonZero">
+        <item name="android:layout_width">@dimen/zeroWidth</item>
+    </style>
+
+    <style name="ButtonBasic.OperatorButtonNight">
+        <item name="backgroundTint">@color/khaki_green_night</item>
+    </style>
+
+    <style name="ButtonBasic.OperatorButtonNight.WithMarginEnd">
+        <item name="android:layout_marginEnd">@dimen/layoutMarginEnd</item>
+    </style>
+
+    <style name="ButtonBasic.OperatorButtonNight.WithMarginEnd.WithMarginStart">
+        <item name="android:layout_marginStart">@dimen/layoutMarginStart</item>
+    </style>
+
+    <style name="ButtonBasic.OperatorButtonNight.ButtonEqual">
+        <item name="android:layout_height">@dimen/zeroHeight</item>
+        <item name="backgroundTint">@color/red_copper_dk_night</item>
+    </style>
+
+    <style name="DeleteButtonNight">
+        <item name="android:layout_width">@dimen/deleteButtonWidth</item>
+        <item name="android:layout_height">@dimen/deleteButtonHeight</item>
+        <item name="android:textSize">@dimen/deleteButtonTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/red_copper_dk_night</item>
+    </style>
+
+    <style name="DeleteButtonNight.WithMarginEnd">
+        <item name="android:layout_marginEnd">@dimen/layoutMarginEnd</item>
+    </style>
+
+    <style name="EditTextBasicNight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/editTextLayoutHeight</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/editTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextBasicNight.WithMarginTop">
+        <item name="android:layout_marginTop">@dimen/calcFieldMarginTop</item>
+    </style>
+
+    <style name="EditTextBasicNight.WithMarginTop.WithMarginBottom">
+        <item name="android:layout_marginTop">@dimen/layoutMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/layoutMarginBottom</item>
+    </style>
+
+    <style name="ButtonBasic.OperatorButtonNight.SwitchButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/switchButton</item>
+        <item name="android:textSize">@dimen/switchButtonText</item>
+    </style>
+
+    <!-- Night Landscape buttons -->
+    <style name="LandButtonBasic.NumberButtonNight">
+        <item name="backgroundTint">@color/golden_brown_night</item>
+    </style>
+
+    <style name="LandButtonBasic.NumberButtonNight.WithMarginEnd">
+        <item name="android:layout_marginEnd">@dimen/layoutMarginEnd</item>
+    </style>
+
+    <style name="LandButtonBasic.NumberButtonNight.ButtonZero">
+        <item name="android:layout_width">@dimen/zeroWidth</item>
+    </style>
+
+    <style name="LandButtonBasic.OperatorButtonNight">
+        <item name="backgroundTint">@color/khaki_green_night</item>
+    </style>
+
+    <style name="LandButtonBasic.OperatorButtonNight.WithMarginEnd">
+        <item name="android:layout_marginEnd">@dimen/layoutMarginEnd</item>
+    </style>
+
+    <style name="LandButtonBasic.OperatorButtonNight.WithMarginEnd.WithMarginStart">
+        <item name="android:layout_marginStart">@dimen/layoutMarginStart</item>
+    </style>
+
+    <style name="LandButtonBasic.OperatorButtonNight.ButtonEqual">
+        <item name="android:layout_height">@dimen/zeroHeight</item>
+        <item name="backgroundTint">@color/red_copper_dk_night</item>
+    </style>
+
+    <style name="LandDeleteButtonNight">
+        <item name="android:layout_width">@dimen/landDeleteButtonWidth</item>
+        <item name="android:layout_height">@dimen/landDeleteButtonHeight</item>
+        <item name="android:textSize">@dimen/landDeleteButtonTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/red_copper_dk_night</item>
+    </style>
+
+    <style name="LandDeleteButtonNight.WithMarginEnd">
+        <item name="android:layout_marginEnd">@dimen/layoutMarginEnd</item>
+    </style>
+
+    <style name="LandEditTextBasicNight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/landEditTextLayoutHeight</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/landEditTextSizeCalculation</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LandEditTextBasicNight.ResultTextView">
+        <item name="android:textSize">@dimen/landEditTextSizeResult</item>
+    </style>
+
+    <style name="LandButtonBasic.OperatorButtonNight.SwitchButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/landSwitchButton</item>
+        <item name="android:textSize">@dimen/switchButtonText</item>
+    </style>
+
 </resources>

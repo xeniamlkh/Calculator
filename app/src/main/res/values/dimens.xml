@@ -5,7 +5,7 @@
     <dimen name="layoutMarginStart">5dp</dimen>
     <dimen name="layoutMarginTop">5dp</dimen>
     <dimen name="layoutMarginBottom">5dp</dimen>
-    <dimen name="calcFieldMarginTop">100dp</dimen>
+    <dimen name="calcFieldMarginTop">60dp</dimen>
     <dimen name="basicButtonLayoutWidth">75dp</dimen>
     <dimen name="basicButtonLayoutHeight">75dp</dimen>
     <dimen name="basicButtonTextSize">30sp</dimen>
@@ -15,10 +15,16 @@
     <dimen name="deleteButtonHeight">75dp</dimen>
     <dimen name="deleteButtonTextSize">20sp</dimen>
     <dimen name="editTextSize">56sp</dimen>
+    <dimen name="switchButton">45dp</dimen>
+    <dimen name="switchButtonText">15sp</dimen>
     <dimen name="landBasicButtonLayoutWidth">130dp</dimen>
     <dimen name="landBasicButtonLayoutHeight">40dp</dimen>
     <dimen name="landBasicButtonTextSize">15sp</dimen>
     <dimen name="landDeleteButtonWidth">350dp</dimen>
     <dimen name="landDeleteButtonHeight">40dp</dimen>
     <dimen name="landDeleteButtonTextSize">15sp</dimen>
+    <dimen name="landEditTextLayoutHeight">35dp</dimen>
+    <dimen name="landEditTextSizeCalculation">10sp</dimen>
+    <dimen name="landEditTextSizeResult">15sp</dimen>
+    <dimen name="landSwitchButton">40dp</dimen>
 </resources>
