@@ -7,7 +7,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +18,6 @@ public class CalculatorFragment extends Fragment {
     private CalculatorViewModel viewModel;
 
     public CalculatorFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -66,22 +64,6 @@ public class CalculatorFragment extends Fragment {
 
         binding.equalBtn.setOnClickListener(v -> viewModel.setInput("="));
 
-    }
-
-    private void lockClickable() {
-        binding.plusBtn.setClickable(false);
-        binding.minusBtn.setClickable(false);
-        binding.multiplicationBtn.setClickable(false);
-        binding.divisionBtn.setClickable(false);
-        binding.pointBtn.setClickable(false);
-    }
-
-    private void unlockClickable() {
-        binding.plusBtn.setClickable(true);
-        binding.minusBtn.setClickable(true);
-        binding.multiplicationBtn.setClickable(true);
-        binding.divisionBtn.setClickable(true);
-        binding.pointBtn.setClickable(true);
     }
 
     @Override
