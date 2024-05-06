@@ -52,7 +52,7 @@ This README file has two paragraphs:
 
 ## What was used in this project?
 
-*	Android Architecture: UI, Model
+*	Android Architecture
 *	ViewModel
 *	LiveData
 *	View Bindings
