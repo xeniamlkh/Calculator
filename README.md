@@ -2,8 +2,8 @@
 Calculator App is **a study project** in Java for Android devices. Please be aware that this project was made for **learning purposes** only and will not be updated or supported further.
 
 This README file has two paragraphs:
-1.	[Description](https://github.com/xeniamlkh/Calculator/new/master?filename=README.md#description)
-2.	[What was used in this project?](https://github.com/xeniamlkh/Calculator/new/master?filename=README.md#description)
+1.	[Description](https://github.com/xeniamlkh/Calculator#description)
+2.	[What was used in this project?](https://github.com/xeniamlkh/Calculator#what-was-used-in-this-project)
 
 ## Description
 * Calculator App is **a primitive calculator** that can perform four operations: **addition**, **subtraction**, **multiplication**, and **division**. This description aims to show the structure of the study project, its functionality, and what instruments have been implemented into the project.
@@ -49,6 +49,8 @@ This README file has two paragraphs:
   
   <img src="https://github.com/xeniamlkh/Calculator/assets/89986215/d23958b7-b68c-41a4-bbe0-a593146a716f" width="298" height="624">
   <img src="https://github.com/xeniamlkh/Calculator/assets/89986215/8b2569d1-f132-40f2-8295-667c2f71eba2" width="307" height="626">
+
+* minSdk = 27; targetSdk = 34. Calculator App supports platform 8.1 (Oreo) and above.
 
 ## What was used in this project?
 
