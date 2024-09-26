@@ -1,11 +1,29 @@
-# What is Calculator App?
-Calculator App is **a study project** in Java for Android devices. Please be aware that this project was made for **learning purposes** only and will not be updated or supported further.
-
-This README file has two paragraphs:
-1.	[Description](https://github.com/xeniamlkh/Calculator#description)
-2.	[What was used in this project?](https://github.com/xeniamlkh/Calculator#what-was-used-in-this-project)
+# Calculator App
 
 ## Description
+The Calculator App is **a study project** in Java for Android devices. Please be aware that this project was made for **learning purposes** only and will not be updated or supported further.
+
+## Key Features
+The Calculator Application contains the following functionality:
+1) Performing four operations: addition, subtraction, multiplication, and division
+2) Transforming a string into a mathematical equation
+3) Supporting floating points numbers
+
+minSdk = 27; targetSdk = 34. Calculator App supports platform 8.1 (Oreo) and above
+
+## Technologies Used
+*	Android Architecture
+*	ViewModel
+*	LiveData
+*	View Bindings
+*	FragmentManager for displaying a Fragment
+*	Constraint Layout, Guidelines, Chains, Bias, - for screen compatibility
+*	Landscape View
+*	Styles
+*	Light and Dark Themes
+*	Java Regular Expressions
+
+## Detailed Description
 * Calculator App is **a primitive calculator** that can perform four operations: **addition**, **subtraction**, **multiplication**, and **division**. This description aims to show the structure of the study project, its functionality, and what instruments have been implemented into the project.
 
   <img src="https://github.com/xeniamlkh/Calculator/assets/89986215/c759e873-caf4-4d57-ba5b-b87e945d8907" width="309" height="626">
@@ -49,18 +67,3 @@ This README file has two paragraphs:
   
   <img src="https://github.com/xeniamlkh/Calculator/assets/89986215/d23958b7-b68c-41a4-bbe0-a593146a716f" width="298" height="624">
   <img src="https://github.com/xeniamlkh/Calculator/assets/89986215/8b2569d1-f132-40f2-8295-667c2f71eba2" width="307" height="626">
-
-* minSdk = 27; targetSdk = 34. Calculator App supports platform 8.1 (Oreo) and above.
-
-## What was used in this project?
-
-*	Android Architecture
-*	ViewModel
-*	LiveData
-*	View Bindings
-*	FragmentManager for displaying a Fragment
-*	Constraint Layout, Guidelines, Chains, Bias, - for screen compatibility
-*	Landscape View
-*	Styles
-*	Light and Dark Themes
-*	Java Regular Expressions
